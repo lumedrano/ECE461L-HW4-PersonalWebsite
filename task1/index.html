@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <h1>Luigi Medrano</h1>
+        <h1 class="animate-text">Luigi Medrano</h1>
         <p>Software Developer</p>
     </header>
 
@@ -20,20 +20,30 @@
         <a href="#contact">Contact</a>
     </nav>
 
-    <div id="about" class="section">
-        <h2 style="text-align: center;">About Me</h2>
+    <div id="about" class="section fade-in">
+        <h2>About Me</h2>
         <img src="assets/images/headshot.JPG" alt="Luigi's profile picture">
-        <p style="text-align: center;">Hi, I'm Luigi! I'm a passionate software developer with a focus on Backend Software and AI/ML. Take a look into some of my content and get in touch!</p>
+        <p>Hi, I'm Luigi! I'm a passionate software developer with a focus on Backend Software and AI/ML. Take a look into some of my content and get in touch!</p>
     </div>
 
-    <div id="projects" class="section">
+    <div id="projects" class="section fade-in">
         <h2 style="text-align: center;">My Projects</h2>
-        <ul style="text-align: center;">
-            <li><strong><i>Compliance Connect(Dell Technologies):</i></strong> An AI chatbot that is able to rapidly produce global compliance information for customer via our Dell IT HelpDesk</li>
-            <li><strong><i>S.lang AI(Personal Startup):</i></strong> An AI/ML bi-directional sign language translation model utilizing a GAN layer to produce sign language images for back and forth communication</li>
-            <li><strong><i>BlueGPT(Blue Origin):</i></strong> an AI chatbot utilizing a RAG architecture to retrieve any information via the company confluence page.</li>
-        </ul>
+        <div class="project-cards">
+            <div class="card">
+                <h3><i>Compliance Connect (Dell Technologies)</i></h3>
+                <p>An AI chatbot that rapidly provides global compliance information for customers via the Dell IT HelpDesk.</p>
+            </div>
+            <div class="card">
+                <h3><i>S.lang AI (Personal Startup)</i></h3>
+                <p>An AI/ML bi-directional sign language translation model using a GAN layer to produce sign language images for real-time communication.</p>
+            </div>
+            <div class="card">
+                <h3><i>BlueGPT (Blue Origin)</i></h3>
+                <p>An AI chatbot leveraging a RAG architecture to retrieve information from the company confluence page efficiently.</p>
+            </div>
+        </div>
     </div>
+    
 
     <section class="footer" id="contact">
         <h4>Media and More</h4>
@@ -43,9 +53,5 @@
             <a href="https://github.com/lumedrano"><i class="fa fa-github"></i></a>
         </div>
     </section>  
-
-    <!-- <footer>
-        <p>&copy; 2024 Luigi Medrano. All rights reserved.</p>
-    </footer> -->
 </body>
 </html>
